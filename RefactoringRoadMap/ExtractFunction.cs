@@ -3,7 +3,7 @@
 public class ExtractFunction
 {
     //Before Extract Function refactoring
-    void PrintOwing(Invoice invoice)
+    void Before_ExtractFunction(Invoice invoice)
     {
         PrintBanner();
         decimal outstanding = CalculateOutstanding();
@@ -14,7 +14,7 @@ public class ExtractFunction
     }
     
     //After Extract Function refactoring
-    void PrintOwing2(Invoice invoice)
+    void After_ExtractFunction(Invoice invoice)
     {
         PrintBanner();
         decimal outstanding = CalculateOutstanding();
