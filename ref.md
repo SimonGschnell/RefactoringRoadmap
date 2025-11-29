@@ -1,4 +1,4 @@
-long functions:
+REFACTORINGS TO REMOVE LONG FUNCTIONS:
 * shorter functions promote health of programs
 * the longer a function is the harder to understand
 * * if we feel the need to write a comment, use **extract function** instead with a self-explanatory name for the extracted method
@@ -11,4 +11,6 @@ long functions:
 * big switch statements should have its legs turned into single function calls with **extract function**
 * if there are multiple switch statement switching on the same condition, use **replace conditional with polymorphism**
 * if the legs of a switch statement are semantically related to the switch condition, one could use **replace conditional with polymorphism**
+* loops and their code can also be extracted to shorten the function, if it is hard to find a name for the extracted loop, that may because the loop is doing 2 different things
+* if loops do 2 different things use **Split Loop** to break out the tasks and extract each split loop
 
