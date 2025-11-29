@@ -6,3 +6,5 @@ long functions:
 * a lot of parameters and temporary variables get in the way of extracting functions. 
 * temporary variables can be eliminated using the refactoring **replace temp with query**
 * Long parameter lists can be slimmed down using the refactorings **Introduce parameter object** and **preserve whole object**
+* If the above refactorings were not enough to refactor the long parameter list than the refactoring **replace function with command** can be used
+
