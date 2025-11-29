@@ -1,4 +1,4 @@
-﻿namespace RefactoringRoadMap;
+﻿namespace RefactoringRoadMap.ExtractFunction;
 
 public class ExtractFunction
 {
@@ -43,4 +43,9 @@ public class ExtractFunction
 internal class Invoice
 {
     public string Customer { get; set; }
+
+    public void Send()
+    {
+        throw new NotImplementedException();
+    }
 }
