@@ -14,3 +14,8 @@ REFACTORINGS TO REMOVE LONG FUNCTIONS:
 * loops and their code can also be extracted to shorten the function, if it is hard to find a name for the extracted loop, that may because the loop is doing 2 different things
 * if loops do 2 different things use **Split Loop** to break out the tasks and extract each split loop
 
+REFACTORINGS TO REMOVE DUPLICATED CODE
+
+* if you see the same code structure in more than one place, you can be sure that your program will be better if you find a way to unify them.
+* use **extract function** if the duplicated code is the same expression in two different methods
+* If the code is similar but not identical, see if **slide statement** can arrage the code so that the similar items are together for easy extraction

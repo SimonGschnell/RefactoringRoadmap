@@ -1,4 +1,4 @@
-namespace RefactoringRoadMap;
+namespace RefactoringRoadMap.PreserveWholeObject;
 
 public class PreserveWholeObject
 {
