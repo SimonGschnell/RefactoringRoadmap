@@ -24,5 +24,10 @@ REFACTORINGS TO REMOVE LONG FUNCTIONS:
 REFACTORINGS TO REMOVE LONG PARAMETER LISTS
 
 * if a parameter can be derived from another parameter then we can use **replace parameter with query**. where we remove the derivable parameter and query it in the function from another parameter
-* 
 
+REFACTORINGS TO ELIMINATE GLOBAL DATA
+
+* global data is hard to test and makes code tightly coupled, global data comes in various forms like: singletons, global variables or even class variables
+* In order to gradually remove global data the refactoring **encapsulate variable** can be used. This refactoring allows us to control the access of the global data from all callers
+* through encapsulate variable the callers can all be redirected to a new object simultaneously and slowly replace the global data by injecting the object to the single callers one by one 
+* 
