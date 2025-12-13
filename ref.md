@@ -30,4 +30,11 @@ REFACTORINGS TO ELIMINATE GLOBAL DATA
 * global data is hard to test and makes code tightly coupled, global data comes in various forms like: singletons, global variables or even class variables
 * In order to gradually remove global data the refactoring **encapsulate variable** can be used. This refactoring allows us to control the access of the global data from all callers
 * through encapsulate variable the callers can all be redirected to a new object simultaneously and slowly replace the global data by injecting the object to the single callers one by one 
+
+REFACTORING FOR LARGE CLASSES
+* When a class has too many fields, that is often an indicator that the class is doing to much
+* When a class does too much, duplicated code is also more likely to be present
+* **extract superclass** can be used to bundle a set of variables together in a component. This is good for variables that likely belong together, like *depositAmount* and *depositCurrency*.
+* Similar prefix or suffix of variables in a class suggest to opportunity for a new component, that houses them.
+* also if methods of a class depend on some type field of the class, the refactoring **replace type code with subclasses** can be used to split the different type behaviours into different subclasses, instead of having a long method with different behaviour based on a type
 * 
