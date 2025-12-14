@@ -37,4 +37,9 @@ REFACTORING FOR LARGE CLASSES
 * **extract superclass** can be used to bundle a set of variables together in a component. This is good for variables that likely belong together, like *depositAmount* and *depositCurrency*.
 * Similar prefix or suffix of variables in a class suggest to opportunity for a new component, that houses them.
 * also if methods of a class depend on some type field of the class, the refactoring **replace type code with subclasses** can be used to split the different type behaviours into different subclasses, instead of having a long method with different behaviour based on a type
-* 
+
+COMMENTS IN CODE
+* Comments are often redundant after a good refactoring
+* If code needs comments, try first **extract method** with a name that clearly states the intent and behaviour
+* Use **change function declaration** or **rename** to find fitting and self-explanatory names for the code
+* If you need to state some rules about a required state of the system, use the **introduce assertion** refactoring
